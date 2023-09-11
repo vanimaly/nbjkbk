@@ -12,6 +12,8 @@ public class Client {
             // Generate a random AES key
             KeyGenerator keyGenerator = KeyGenerator.getInstance("AES");
             SecretKey secretKey = keyGenerator.generateKey();
+            //Qual ou quais os modos de operacao experimentados?
+            //Fez o calculo de Padding?
 
             // ESTABELECENDOA CONEXAO COM O SERVIDOR
             Socket socket = new Socket("localhost", 12345);
